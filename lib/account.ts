@@ -5,6 +5,8 @@ import { computeAddress, genPrKey, getBase58CheckAddress } from './crypto'
  */
 export const generateAccount = (): {
   address: string
+  publicKey: string,
+  addressBytes: string,
   privateKey: string
 } => {
   const { publicKey, privateKey } = genPrKey()
