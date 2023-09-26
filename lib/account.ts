@@ -11,5 +11,5 @@ export const generateAccount = (): {
   const addressBytes = computeAddress(publicKey)
   const address = getBase58CheckAddress(addressBytes)
 
-  return { address, privateKey }
+  return { address, publicKey, addressBytes, privateKey }
 }
